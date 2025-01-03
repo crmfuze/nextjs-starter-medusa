@@ -2,6 +2,69 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.bg {
+  background-image: url('https://assets.cdn.filesafe.space/6dRDxG3BnTVRqbJea3Nu/media/6632a96c5f8744fe4f8292d3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+}
+.bg2 {
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjusts the background to cover the full area */
+  background-image: url('https://assets.cdn.filesafe.space/6dRDxG3BnTVRqbJea3Nu/media/662a6b7a277a38c6a47918eb.png');
+  width: 100%;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light gray */
+  border-top: 8px solid #9B37AE; /* Blue */
+  border-radius: 50%;
+  width: 50px; /* Size of the spinner */
+  height: 50px; /* Size of the spinner */
+  animation: spin 1s linear infinite; /* Animation for spinning */
+  margin: 0 auto; /* Center the spinner */
+}
+/* ProductVariants.module.css */
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiperButtonPrev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.swiperButtonNext {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Optional: Add arrow icons or other custom styles */
+.swiperButtonPrev::before {
+  content: '◀'; /* You can use a custom icon or Unicode arrow */
+  font-size: 20px;
+}
+
+.swiperButtonNext::before {
+  content: '▶'; /* You can use a custom icon or Unicode arrow */
+  font-size: 20px;
+}
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
