@@ -36,6 +36,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "ambrosia-medusa-bucket.sfo3.cdn.digitaloceanspaces.com"
+      }
     ],
   },
 }
